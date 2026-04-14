@@ -825,3 +825,146 @@ footer {
 .social_media img:hover {
     transform: translateY(-3px);
 }
+
+
+/* --- ADAPTIVITY --- */
+@media (max-width: 1024px) {
+    .header, .hero {
+        padding: 20px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .steps {
+        gap: 30px;
+    }
+
+    .featured_projects {
+        margin: 80px 30px;
+    }
+
+    .projects_grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team_block {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .nav-cta {
+        margin: 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 40px 20px;
+        order: 2;
+    }
+
+    .hero div:last-child {
+        order: 1;
+    }
+
+    .about_us {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .our_firm h2 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .house p, .staircase p, .swirling p {
+        margin: 0 20px;
+        max-width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .prior_clients {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .happy_customers {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .clients_logos {
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    .team_block {
+        grid-template-columns: 1fr;
+    }
+
+    #touch {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 350px;
+    }
+
+    .touch_block p {
+        font-size: 28px;
+    }
+
+    .clients_logos {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .social_media img {
+        margin: 0 10px;
+    }
+}
